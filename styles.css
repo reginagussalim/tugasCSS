@@ -8,11 +8,27 @@
     overflow-x: hidden;
 }
 
+.animasi-atas{
+    animation: ke-atas 1s ease-in-out forwards;
+}
+
+@keyframes ke-atas {
+    0% {
+        transform: translateY(150px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 body {
     width: 100%;
     /* Set your desired fixed width */
     margin: 0 auto;
     /* Center the body horizontally */
+    background: #FBF2E1;
 }
 
 .header {
